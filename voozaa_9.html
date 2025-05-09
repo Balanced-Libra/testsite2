@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerbank Automaten für Ihr Geschäft | Voozaa Partner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00ff9d',
+                        secondary: '#96e6a1',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #00ff9d 0%, #00e0ff 100%);
+            min-height: 100vh;
+            color: #000;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+            z-index: 10;
+        }
+        .btn-primary {
+            background: #000;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+        .whatsapp-btn {
+            background: #25D366;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(212, 252, 121, 0.7);
+            }
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(212, 252, 121, 0);
+            }
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(212, 252, 121, 0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans flex flex-col min-h-screen">
+    <div class="container mx-auto px-4 py-8 flex-grow">
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between min-h-[80vh] py-12">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Steigern Sie Ihren Umsatz mit Powerbank Automaten</h1>
+                <p class="text-xl mb-8">Als unabhängige Voozaa-Partnerin helfe ich Ihnen, zusätzliche Einnahmen zu generieren - ohne Kosten oder Aufwand für Sie.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="btn-primary px-8 py-4 rounded-full font-bold text-lg inline-block text-center pulse">Jetzt Partner werden</a>
+                    <a href="#models" class="px-8 py-4 rounded-full font-bold text-lg inline-block text-center border-2 border-black">Modelle entdecken</a>
+                </div>
+                <p class="mt-4 text-sm opacity-80">* Keine versteckten Kosten · Kein Risiko · Einfache Installation</p>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb" alt="Powerbank im Einsatz" class="rounded-2xl shadow-2xl max-w-full h-auto border-4 border-white">
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-16">
+            <h2 class="text-3xl font-bold mb-12 text-center">Ihre Vorteile als Partner</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card p-8">
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Umsatzbeteiligung</h3>
+                    <p class="text-gray-700">Sie erhalten einen Anteil an jedem Powerbank-Verleih direkt auf Ihr Konto - monatliche Auszahlung garantiert.</p>
+                </div>
+                <div class="card p-8">
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-euro-sign"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Keine Kosten</h3>
+                    <p class="text-gray-700">Keine Anschaffungskosten, Wartung oder sonstige Gebühren. Wir übernehmen alle Investitionen.</p>
+                </div>
+                <div class="card p-8">
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-users"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Mehr Kundschaft</h3>
+                    <p class="text-gray-700">Attraktives Zusatzangebot, das neue Kunden anzieht und bestehende länger in Ihrem Geschäft hält.</p>
+                </div>
+                <div class="card p-8">
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-headset"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Vollständiger Support</h3>
+                    <p class="text-gray-700">Ich kümmere mich um Installation, Wartung und technischen Support - Sie genießen die Vorteile.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="py-16">
+            <h2 class="text-3xl font-bold mb-12 text-center">So einfach funktioniert's</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="video-container mb-4">
+                        <video controls class="w-full h-full">
+                            <source src="assets/a.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Mietprozess</h3>
+                    <p class="text-gray-700">Wie Kunden die Powerbanks mieten und zurückgeben.</p>
+                </div>
+                <div>
+                    <div class="video-container mb-4">
+                        <video controls class="w-full h-full">
+                            <source src="assets/b.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">WLAN-Setup</h3>
+                    <p class="text-gray-700">Einfache Verbindung mit Ihrem WLAN in wenigen Schritten.</p>
+                </div>
+                <div>
+                    <div class="video-container mb-4">
+                        <video controls class="w-full h-full">
+                            <source src="assets/c.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Kurze Demo</h3>
+                    <p class="text-gray-700">Alles Wichtige in 60 Sekunden zusammengefasst.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Models Section -->
+        <section id="models" class="py-16">
+            <h2 class="text-3xl font-bold mb-12 text-center">Unsere Automaten-Modelle</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card p-8 relative">
+                    <div class="absolute top-4 right-4 bg-primary text-black px-3 py-1 rounded-full text-xs font-bold">BELIEBT</div>
+                    <h3 class="text-2xl font-bold mb-4">8er Automat</h3>
+                    <p class="mb-4 text-gray-700">Ideal für kleine Läden mit begrenztem Platzangebot.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>8 Powerbanks</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>Kompakte Bauweise</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>Einfache Installation</span></li>
+                    </ul>
+                    <div class="text-primary font-bold text-xl">Ab 15€/Monat Umsatzbeteiligung</div>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold mb-4">12er Automat</h3>
+                    <p class="mb-4 text-gray-700">Perfekt für mittelgroße Geschäfte mit guter Kundenfrequenz.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>12 Powerbanks</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>Optimale Auslastung</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>Schnelle Amortisation</span></li>
+                    </ul>
+                    <div class="text-primary font-bold text-xl">Ab 25€/Monat Umsatzbeteiligung</div>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold mb-4">24er Automat</h3>
+                    <p class="mb-4 text-gray-700">Für stark frequentierte Standorte mit hohem Bedarf.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>24 Powerbanks</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>Hohe Verfügbarkeit</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>Maximale Einnahmen</span></li>
+                    </ul>
+                    <div class="text-primary font-bold text-xl">Ab 45€/Monat Umsatzbeteiligung</div>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold mb-4">48er Automat</h3>
+                    <p class="mb-4 text-gray-700">Premium-Lösung für Großkunden und Einkaufszentren.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>48 Powerbanks</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>Professionelles Management</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-primary mt-1 mr-2"></i> <span>Höchste Rendite</span></li>
+                    </ul>
+                    <div class="text-primary font-bold text-xl">Ab 80€/Monat Umsatzbeteiligung</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="py-16">
+            <h2 class="text-3xl font-bold mb-12 text-center">Powerbank Automaten in Bremer Geschäften</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae" alt="Standort 1" class="rounded-lg w-full h-48 object-cover shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df" alt="Standort 2" class="rounded-lg w-full h-48 object-cover shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd1953a0c5" alt="Standort 3" class="rounded-lg w-full h-48 object-cover shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Standort 4" class="rounded-lg w-full h-48 object-cover shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df" alt="Standort 5" class="rounded-lg w-full h-48 object-cover shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae" alt="Standort 6" class="rounded-lg w-full h-48 object-cover shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd1953a0c5" alt="Standort 7" class="rounded-lg w-full h-48 object-cover shadow-md">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Standort 8" class="rounded-lg w-full h-48 object-cover shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16">
+            <div class="card max-w-4xl mx-auto p-8 md:p-12">
+                <h2 class="text-3xl font-bold mb-8 text-center">Kontaktieren Sie mich</h2>
+                <p class="text-center mb-8 text-gray-700">Haben Sie Fragen oder möchten Sie einen Automaten in Ihrem Geschäft aufstellen? Schreiben Sie mir eine Nachricht!</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <div class="bg-white rounded-lg p-6 shadow-md">
+                            <form class="space-y-4">
+                                <div>
+                                    <label for="name" class="block font-medium mb-2">Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                                <div>
+                                    <label for="email" class="block font-medium mb-2">E-Mail</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                                <div>
+                                    <label for="message" class="block font-medium mb-2">Nachricht</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                                </div>
+                                <button type="submit" class="w-full btn-primary px-6 py-3 rounded-lg font-bold">Nachricht senden</button>
+                            </form>
+                            <div class="mt-6 text-center">
+                                <p class="mb-4">Oder kontaktieren Sie mich direkt per WhatsApp:</p>
+                                <a href="https://wa.me/49123456789" class="inline-flex items-center whatsapp-btn px-6 py-3 rounded-lg font-bold">
+                                    <i class="fab fa-whatsapp text-xl mr-2"></i> WhatsApp Chat starten
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Häufige Fragen</h3>
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <div class="flex justify-between items-center cursor-pointer">
+                                    <h4 class="font-medium">Wie hoch ist die Mietgebühr?</h4>
+                                    <i class="fas fa-chevron-down text-primary"></i>
+                                </div>
+                                <p class="mt-2 text-sm hidden">Die erste Stunde ist kostenlos, danach berechnen wir 1€ pro Stunde. Maximal 10€ pro Tag.</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <div class="flex justify-between items-center cursor-pointer">
+                                    <h4 class="font-medium">Wo kann ich die Powerbank zurückgeben?</h4>
+                                    <i class="fas fa-chevron-down text-primary"></i>
+                                </div>
+                                <p class="mt-2 text-sm hidden">Sie können die Powerbank an jedem beliebigen Voozaa-Automaten zurückgeben.</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <div class="flex justify-between items-center cursor-pointer">
+                                    <h4 class="font-medium">Wie wird die Abrechnung für Partner durchgeführt?</h4>
+                                    <i class="fas fa-chevron-down text-primary"></i>
+                                </div>
+                                <p class="mt-2 text-sm hidden">Die monatliche Abrechnung erfolgt automatisch per Überweisung auf Ihr Konto.</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <div class="flex justify-between items-center cursor-pointer">
+                                    <h4 class="font-medium">Welche technischen Voraussetzungen gibt es?</h4>
+                                    <i class="fas fa-chevron-down text-primary"></i>
+                                </div>
+                                <p class="mt-2 text-sm hidden">Der Automat benötigt lediglich einen Stromanschluss und eine stabile Internetverbindung.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Toggle FAQ answers
+                document.querySelectorAll('.bg-white.rounded-lg.p-4').forEach(item => {
+                    const toggle = item.querySelector('.flex.justify-between.items-center');
+                    const answer = item.querySelector('p.hidden');
+                    
+                    toggle.addEventListener('click', () => {
+                        answer.classList.toggle('hidden');
+                        const icon = toggle.querySelector('i');
+                        icon.classList.toggle('fa-chevron-down');
+                        icon.classList.toggle('fa-chevron-up');
+                    });
+                });
+            </script>
+            </div>
+        </div>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/49123456789" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    <footer class="text-white relative w-full py-4 bg-transparent">
+        <div class="w-full">
+            <div class="grid md:grid-cols-4 gap-8 px-4">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bolt text-2xl mr-2 text-primary"></i>
+                        <span class="font-bold text-xl">Charge to go Partner</span>
+                    </div>
+                    <p class="text-gray-200">Powerbank-Automaten für Ihr Geschäft. Powered by Voozaa.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Für Partner</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#contact" class="text-gray-200 hover:text-white">Kontakt</a></li>
+                        <li><a href="#models" class="text-gray-200 hover:text-white">Modelle</a></li>
+                        <li><a href="#benefits" class="text-gray-200 hover:text-white">Vorteile</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white">Partner-Login</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Unterstützung</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-200 hover:text-white">Häufige Fragen</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white">Support</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white">Installation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Rechtliches</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-200 hover:text-white">Impressum</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white">Datenschutz</a></li>
+                        <li><a href="#" class="text-gray-200 hover:text-white">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-300 mt-4 pt-4 flex flex-col md:flex-row justify-between items-center px-4">
+                <p class="text-gray-200 mb-2 md:mb-0">© 2025 Charge to go. Alle Rechte vorbehalten.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
