@@ -41,18 +41,19 @@
         }
         .video-container {
             position: relative;
-            padding-bottom: 56.25%;
+            padding-bottom: 150%; /* 3/2 = 1.5, für 2:3 aspect ratio */
             height: 0;
             overflow: hidden;
             border-radius: 12px;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
-        .video-container iframe {
+        .video-container video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+            object-fit: cover; /* Stellt sicher, dass das Video den Container ausfüllt */
         }
         .gallery-item {
             transition: all 0.3s ease;
@@ -148,7 +149,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <div class="video-container mb-4">
-                        <video controls class="w-full h-full">
+                        <video controls preload="metadata" class="w-full h-full">
                             <source src="assets/a.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -158,7 +159,7 @@
                 </div>
                 <div>
                     <div class="video-container mb-4">
-                        <video controls class="w-full h-full">
+                        <video controls preload="metadata" class="w-full h-full">
                             <source src="assets/b.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -168,7 +169,7 @@
                 </div>
                 <div>
                     <div class="video-container mb-4">
-                        <video controls class="w-full h-full">
+                        <video controls preload="metadata" class="w-full h-full">
                             <source src="assets/c.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -229,31 +230,31 @@
 
         <!-- Gallery Section -->
         <section class="py-16">
-            <h2 class="text-3xl font-bold mb-12 text-center">Powerbank Automaten in Bremer Geschäften</h2>
+            <h2 class="text-3xl font-bold mb-12 text-center">Powerbank Automaten in echten Geschäften</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae" alt="Standort 1" class="rounded-lg w-full h-48 object-cover shadow-md">
+                    <img src="assets/Cafe.jpeg" alt="Café Standort" class="rounded-lg w-full h-48 object-cover shadow-md">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df" alt="Standort 2" class="rounded-lg w-full h-48 object-cover shadow-md">
+                    <img src="assets/entrance.jpeg" alt="Eingang Standort" class="rounded-lg w-full h-48 object-cover shadow-md">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1522542550221-31fd1953a0c5" alt="Standort 3" class="rounded-lg w-full h-48 object-cover shadow-md">
+                    <img src="assets/hotel.jpeg" alt="Hotel Standort" class="rounded-lg w-full h-48 object-cover shadow-md">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Standort 4" class="rounded-lg w-full h-48 object-cover shadow-md">
+                    <img src="assets/imbiss.jpeg" alt="Imbiss Standort" class="rounded-lg w-full h-48 object-cover shadow-md">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df" alt="Standort 5" class="rounded-lg w-full h-48 object-cover shadow-md">
+                    <img src="assets/Kiosk.jpeg" alt="Kiosk Standort" class="rounded-lg w-full h-48 object-cover shadow-md">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae" alt="Standort 6" class="rounded-lg w-full h-48 object-cover shadow-md">
+                    <img src="assets/rest.jpeg" alt="Restaurant Standort" class="rounded-lg w-full h-48 object-cover shadow-md">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1522542550221-31fd1953a0c5" alt="Standort 7" class="rounded-lg w-full h-48 object-cover shadow-md">
+                    <img src="assets/shop.jpeg" alt="Shop Standort" class="rounded-lg w-full h-48 object-cover shadow-md">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Standort 8" class="rounded-lg w-full h-48 object-cover shadow-md">
+                    <img src="assets/waitroom.jpeg" alt="Warteraum Standort" class="rounded-lg w-full h-48 object-cover shadow-md">
                 </div>
             </div>
         </section>
